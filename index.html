@@ -83,31 +83,269 @@
   </div>
 </section>
 
-    <section id="about">
-      <h2>About</h2>
+<section id="about" class="about">
+  <div class="container about-inner">
+    <div class="about-layout">
+      <!-- LEFT COLUMN -->
+      <div class="about-left">
+        <h2 class="about-title">
+          About Me
+          <span class="about-title-rule" aria-hidden="true"></span>
+        </h2>
 
-      <div class="about-grid">
-        <div>
-          <h3>Education</h3>
-          <ul></ul>
+        <div class="about-block">
+          <h3 class="about-h3">
+            <span class="about-ico" aria-hidden="true">🎓</span>
+            Education
+            <span class="about-h3-rule" aria-hidden="true"></span>
+          </h3>
+          <ul class="about-list">
+            <li>Bachelor’s in Software Engineering</li>
+            <li>Master’s in Data Science (in progress)</li>
+          </ul>
         </div>
 
-        <div>
-          <h3>Certifications</h3>
-          <ul></ul>
+        <div class="about-block">
+          <h3 class="about-h3">
+            <span class="about-ico" aria-hidden="true">💼</span>
+            Professional Background
+            <span class="about-h3-rule" aria-hidden="true"></span>
+          </h3>
+          <ul class="about-list">
+            <li>Data Scientist with a background in Business Analysis, experienced in translating ambiguous requirements into well-defined analytical questions and actionable insights.</li>
+            <li>Strong at bridging stakeholders and data — turning business needs into clean datasets, measurable metrics, and interpretable models./li>
+            <li>Specialized in working with messy, real-world data: sourcing from APIs, cleaning and merging multiple datasets, and documenting assumptions and limitations.</li>
+            <li>Build end-to-end analytical workflows in Python, from raw data to machine learning models and decision-ready outputs.</li>
+            <li>Recent projects focus on research-oriented datasets in environmental and food-access domains, where data quality and methodology matter more than visuals.</li>
+          </ul>
         </div>
 
-        <div>
-          <h3>Professional Background</h3>
-          <ul></ul>
-        </div>
-
-        <div>
-          <h3>Tools & Skills</h3>
-          <ul></ul>
+        <div class="about-block">
+          <h3 class="about-h3">
+            <span class="about-ico" aria-hidden="true">📃</span>
+            Certifications
+            <span class="about-h3-rule" aria-hidden="true"></span>
+          </h3>
+          <ul class="about-list">
+            <li>Career Foundry: Data Analysis</li>
+          </ul>
         </div>
       </div>
-    </section>
+
+      <!-- RIGHT COLUMN -->
+      <div class="about-right">
+        <div class="about-quote" role="note" aria-label="Personal statement">
+          <p>
+            Data analysis is an art — and I’m just the tool that helps
+            <strong>reveal the picture</strong> hidden beneath the <strong>numbers</strong>.
+          </p>
+        </div>
+
+        <div class="about-block">
+          <h3 class="about-h3">
+            <span class="about-ico" aria-hidden="true">🛠️</span>
+            Tools & Skills
+            <span class="about-h3-rule" aria-hidden="true"></span>
+          </h3>
+
+          <div class="skills">
+            <!-- Programming & Data Manipulation -->
+            <details class="skill-group" open>
+              <summary>
+                Programming &amp; Data Manipulation
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+
+              <div class="skill-group-body">
+                <details class="skill-item">
+                  <summary>
+                    Python (pandas, numpy, scipy)
+                    <span class="chev" aria-hidden="true"></span>
+                  </summary>
+                  <ul>
+                    <li>Data cleaning, transformation, merging large datasets</li>
+                    <li>Feature engineering, vectorized operations, performance-aware workflows</li>
+                  </ul>
+                </details>
+
+                <details class="skill-item">
+                  <summary>
+                    SQL (PostgreSQL / SQLite)
+                    <span class="chev" aria-hidden="true"></span>
+                  </summary>
+                  <ul>
+                    <li>Joins, subqueries, CTEs, aggregations</li>
+                    <li>Data validation, exploratory querying, schema understanding</li>
+                  </ul>
+                </details>
+              </div>
+            </details>
+
+            <!-- Data Collection & Integration -->
+            <details class="skill-group">
+              <summary>
+                Data Collection &amp; Integration
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+
+              <div class="skill-group-body">
+                <ul class="flat">
+                  <li>APIs (REST)</li>
+                  <li>Data ingestion, pagination handling, authentication</li>
+                  <li>JSON normalization, schema alignment across sources</li>
+                  <li>Web data handling (structured extraction)</li>
+                  <li>Dealing with inconsistent formats and missing fields</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Data Cleaning & Preparation -->
+            <details class="skill-group">
+              <summary>
+                Data Cleaning &amp; Preparation
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+
+              <div class="skill-group-body">
+                <ul class="flat">
+                  <li>Handling missing data (imputation, exclusion with justification)</li>
+                  <li>Deduplication and record linkage</li>
+                  <li>Data type standardization and normalization</li>
+                  <li>Outlier detection and treatment</li>
+                  <li>Data quality checks and validation rules</li>
+                  <li>Documentation of assumptions and limitations</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- ML — Supervised -->
+            <details class="skill-group">
+              <summary>
+                Machine Learning — Supervised
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+
+              <div class="skill-group-body">
+                <ul class="flat">
+                  <li>Classification &amp; Regression</li>
+                  <li>Logistic Regression, Decision Trees, Random Forest, K-Nearest Neighbors</li>
+                  <li>Model evaluation: precision, recall, F1-score, ROC-AUC</li>
+                  <li>Confusion matrix analysis</li>
+                  <li>Feature scaling: StandardScaler, MinMaxScaler</li>
+                  <li>Hyperparameter tuning: GridSearchCV, RandomizedSearchCV</li>
+                  <li>Train / validation / test design (time-aware splits when applicable)</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- ML — Unsupervised -->
+            <details class="skill-group">
+              <summary>
+                Machine Learning — Unsupervised
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+
+              <div class="skill-group-body">
+                <ul class="flat">
+                  <li>Clustering: K-Means, Hierarchical clustering</li>
+                  <li>Dimensionality reduction: PCA</li>
+                  <li>Cluster validation and interpretation</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Neural Networks -->
+            <details class="skill-group">
+              <summary>
+                Neural Networks (Applied)
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+
+              <div class="skill-group-body">
+                <ul class="flat">
+                  <li>ANN (feedforward)</li>
+                  <li>CNN (spatial data only)</li>
+                  <li>RNN / LSTM (sequential data only)</li>
+                  <li>TensorFlow / Keras or PyTorch</li>
+                </ul>
+                <p class="skills-note">Listing NN works because you can explain when not to use them.</p>
+              </div>
+            </details>
+
+            <!-- Time Series -->
+            <details class="skill-group">
+              <summary>
+                Time Series &amp; Temporal Analysis
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+
+              <div class="skill-group-body">
+                <ul class="flat">
+                  <li>Time-based feature engineering (lags, rolling windows)</li>
+                  <li>Trend and seasonality analysis</li>
+                  <li>Baseline forecasting methods</li>
+                  <li>Time-aware validation strategies</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Viz & Communication -->
+            <details class="skill-group">
+              <summary>
+                Data Visualization &amp; Communication
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+
+              <div class="skill-group-body">
+                <ul class="flat">
+                  <li>Tableau: interactive dashboards, KPI reporting, geo/time visuals</li>
+                  <li>Python visualization: matplotlib, seaborn</li>
+                  <li>Translating results into non-technical insights</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Geospatial -->
+            <details class="skill-group">
+              <summary>
+                Geospatial &amp; Structured Data
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+
+              <div class="skill-group-body">
+                <ul class="flat">
+                  <li>Geographic identifiers (ZIP, census tract, region)</li>
+                  <li>Spatial joins and aggregation</li>
+                  <li>Distance-based metrics and density calculations</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Workflow -->
+            <details class="skill-group">
+              <summary>
+                Workflow &amp; Tooling
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+
+              <div class="skill-group-body">
+                <ul class="flat">
+                  <li>Git / GitHub (version control)</li>
+                  <li>Reproducible project structure</li>
+                  <li>Jupyter Notebooks / Python scripts</li>
+                  <li>Modular, readable code practices</li>
+                  <li>Dataset versioning (raw / interim / final)</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+</section>
 
     <section id="portfolio">
       <h2>Portfolio</h2>

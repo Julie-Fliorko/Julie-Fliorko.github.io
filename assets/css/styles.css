@@ -25,7 +25,7 @@
   --header-h: 84px;
 
   /* controls where hero ends relative to viewport bottom */
-  --fold-offset: 60px;
+  --fold-offset: -40px;
 
   /* SINGLE shared background image */
   --bg-canvas: url("../images/bg.webp");
@@ -901,5 +901,216 @@ p {
 
   #hero .hero-image {
     width: min(320px, 72vw);
+  }
+}
+
+/* =========================
+   ABOUT (airy mockup layout)
+   ========================= */
+#about.about{
+  padding: 72px 0;
+}
+
+.about-inner{
+  position: relative;
+}
+
+.about-layout{
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.about-title{
+  display: grid;
+  gap: 14px;
+  margin: 0 0 28px;
+  font-size: clamp(34px, 4vw, 48px);
+  letter-spacing: -0.6px;
+  color: rgba(17,17,17,0.78);
+}
+
+.about-title-rule{
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: rgba(17,17,17,0.10);
+}
+
+.about-block{
+  padding: 0;
+  margin: 0 0 28px;
+}
+
+.about-h3{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 14px;
+  font-size: 22px;
+  letter-spacing: -0.25px;
+  color: rgba(17,17,17,0.74);
+}
+
+.about-ico{
+  font-size: 18px;
+  opacity: 0.85;
+  transform: translateY(1px);
+}
+
+.about-h3-rule{
+  flex: 1;
+  height: 1px;
+  background: rgba(17,17,17,0.10);
+  margin-left: 12px;
+}
+
+.about-list{
+  margin: 0 0 18px;
+  padding-left: 18px;
+  color: rgba(17,17,17,0.62);
+  line-height: 1.6;
+}
+
+.about-list li{
+  margin: 8px 0;
+}
+
+.about-quote{
+  margin: 0 0 34px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  border: 1px solid rgba(17,17,17,0.08);
+  background:
+    radial-gradient(120% 120% at 20% 10%, rgba(220, 214, 243, 0.55), transparent 55%),
+    radial-gradient(120% 120% at 85% 35%, rgba(231, 160, 126, 0.35), transparent 60%),
+    rgba(255,255,255,0.28);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 18px 44px rgba(0,0,0,0.08);
+}
+
+.about-quote p{
+  margin: 0;
+  font-size: 18px;
+  color: rgba(17,17,17,0.66);
+}
+
+.about-quote strong{
+  color: rgba(17,17,17,0.78);
+}
+
+/* =========================
+   Skills accordion (clean, not card-y)
+   ========================= */
+.skills{
+  display: grid;
+  gap: 12px;
+}
+
+.skill-group{
+  border-top: 1px solid rgba(17,17,17,0.10);
+  padding-top: 12px;
+}
+
+.skill-group:last-child{
+  border-bottom: 1px solid rgba(17,17,17,0.10);
+  padding-bottom: 12px;
+}
+
+.skill-group > summary{
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  font-weight: 800;
+  color: rgba(17,17,17,0.70);
+  padding: 10px 0;
+}
+
+.skill-group > summary::-webkit-details-marker{ display: none; }
+
+.skill-group-body{
+  padding: 6px 0 2px;
+  display: grid;
+  gap: 10px;
+}
+
+.skill-item{
+  border-left: 2px solid rgba(175, 130, 255, 0.22);
+  padding-left: 12px;
+}
+
+.skill-item > summary{
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 700;
+  color: rgba(17,17,17,0.62);
+  padding: 6px 0;
+}
+
+.skill-item > summary::-webkit-details-marker{ display: none; }
+
+.skill-item ul,
+.skill-group-body ul.flat{
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(17,17,17,0.58);
+  line-height: 1.6;
+}
+
+.skill-item ul li,
+.skill-group-body ul.flat li{
+  margin: 8px 0;
+}
+
+.skills-note{
+  margin: 8px 0 0;
+  color: rgba(17,17,17,0.48);
+  font-style: italic;
+}
+
+/* chevron (no external icons needed) */
+.chev{
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid rgba(17,17,17,0.50);
+  border-bottom: 2px solid rgba(17,17,17,0.50);
+  transform: rotate(45deg);
+  transition: transform 160ms ease, opacity 160ms ease;
+  opacity: 0.75;
+}
+
+details[open] > summary .chev{
+  transform: rotate(-135deg);
+  opacity: 0.9;
+}
+
+/* hover polish */
+.skill-group > summary:hover,
+.skill-item > summary:hover{
+  color: rgba(17,17,17,0.74);
+}
+
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 900px){
+  .about-layout{
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .about-quote{
+    margin-bottom: 22px;
   }
 }
