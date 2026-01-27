@@ -96,7 +96,7 @@
   },
   {
     "project_id": "us_housing_market",
-    "project_name": "U.S. Housing Market Analysis Portfolio Project",
+    "project_name": "U.S. Housing Market Analysis",
     "slug": "us-housing-market-analysis",
     "category": "data_analysis",
     "primary_focus": "api",
