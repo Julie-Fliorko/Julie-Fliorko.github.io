@@ -506,12 +506,14 @@
 .viz-card img{
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  max-height: 420px;
+  object-fit: contain;
+  object-position: center;
   display: block;
   border-radius: 16px;
   border: 1px solid rgba(0,0,0,0.06);
   background: rgba(255,255,255,0.35);
+  padding: 10px;
 }
 
 .viz-note{

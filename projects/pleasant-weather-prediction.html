@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pleasant Weather Predictions | Julia Fliorko</title>
+
+  <!-- Global site CSS -->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <!-- Project-specific CSS -->
+  <link rel="stylesheet" href="../assets/css/projects/pleasant-weather.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYCBC5MYN1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-DYCBC5MYN1");
+  </script>
+</head>
+
+<body>
+  <!-- HEADER (same as your main site) -->
+  <header id="header">
+    <nav class="nav">
+      <a href="../index.html#hero" class="brand" aria-label="Go to Home">Julia Fliorko</a>
+
+      <div class="nav-center">
+        <a href="../index.html#hero" class="nav-link">Home</a>
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#portfolio" class="nav-link">Portfolio</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page" id="top">
+    <section class="project-hero">
+      <div class="container">
+        <!-- Breadcrumbs -->
+        <nav class="project-breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html#portfolio">Portfolio</a>
+          <span class="crumb-sep">›</span>
+          <span aria-current="page">Pleasant Weather Predictions</span>
+        </nav>
+
+        <div class="project-hero-grid">
+          <!-- Left: Hero card -->
+          <div class="project-hero-card">
+            <div class="project-hero-media" aria-hidden="true">
+              <img src="../assets/images/pleasant-weather.webp" alt="" />
+            </div>
+
+            <div class="project-hero-content">
+              <h1 class="project-title">Pleasant Weather Predictions</h1>
+
+              <div class="project-subtitle">
+                <p>
+                  Predicting <strong>“pleasant days”</strong> ahead of time
+                  using <strong>Python ML</strong> + a reproducible
+                  <strong>notebook pipeline</strong> — built for practical
+                  planning (outdoors, events, staffing, travel).
+                </p>
+
+                <p>
+                  The input data was messy in all the classic ways:
+                  <strong>missing observations</strong>, station gaps,
+                  <strong>mixed sampling frequency</strong>, and
+                  <strong>extreme spikes</strong> during storms/heat waves. I
+                  converted raw API pulls into a modeling-grade dataset with
+                  daily standardization, automated QA checks, consistent
+                  feature schemas, and leakage-safe splits.
+                </p>
+
+                <p>
+                  Then I trained and compared multiple model families —
+                  baseline classifiers, tree-based models, and neural nets —
+                  with <strong>hyperparameter tuning</strong>,
+                  <strong>confusion-matrix diagnostics</strong>, ROC/AUC-style
+                  evaluation, and feature attribution to answer:
+                  <em>“Will tomorrow feel pleasant — and how confident are we?”</em>
+                </p>
+
+                <p>
+                  Deliverable: a decision-ready “pleasantness probability”
+                  output + visuals that translate raw weather variables into a
+                  stakeholder-friendly signal.
+                </p>
+              </div>
+
+              <div class="project-chips" aria-label="Project tags">
+                <span class="chip pill">Python</span>
+                <span class="chip pill">Time Series</span>
+                <span class="chip pill">Feature Engineering</span>
+                <span class="chip pill">Classification</span>
+                <span class="chip pill">Unsupervised Learning</span>
+                <span class="chip pill">Deep Learning (CNN/RNN/LSTM)</span>
+                <span class="chip pill">Bayesian Tuning</span>
+                <span class="chip pill">Model Evaluation</span>
+                <span class="chip pill">Weather API</span>
+              </div>
+
+              <div class="project-cta">
+                <a class="btn btn-primary"
+                  href="https://public.tableau.com/app/profile/yuliia.fliorko/viz/Story_17629093650820/WhatMakesHousePrice"
+                  target="_blank" rel="noreferrer">
+                  <span class="btn-ico" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 4h7v7H4V4Zm9 0h7v4h-7V4ZM13 10h7v10h-7V10ZM4 13h7v7H4v-7Z" />
+                    </svg>
+                  </span>
+                  <span class="btn-text">View Notebook Pipeline</span>
+                </a>
+
+                <a class="btn btn-ghost" href="https://github.com/Julia-Fliorko/Pleasant-weather-predictions/tree/main"
+                  target="_blank" rel="noreferrer">
+                  <span class="btn-ico" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 .8a11.2 11.2 0 0 0-3.54 21.8c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.75-1.32-3.75-1.32-.5-1.28-1.23-1.62-1.23-1.62-1-.7.07-.69.07-.69 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.69-1.47-2.47-.28-5.07-1.23-5.07-5.48 0-1.21.43-2.2 1.13-2.98-.11-.28-.49-1.4.11-2.93 0 0 .92-.3 3.02 1.14a10.4 10.4 0 0 1 5.5 0c2.1-1.44 3.02-1.14 3.02-1.14.6 1.53.22 2.65.11 2.93.7.78 1.13 1.77 1.13 2.98 0 4.26-2.6 5.2-5.08 5.47.39.34.74 1.02.74 2.06v3.05c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z" />
+                    </svg>
+                  </span>
+                  <span class="btn-text">View GitHub Repo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Overview card -->
+          <aside class="project-overview" aria-label="Project overview">
+            <div class="overview-head">
+              <span class="overview-emoji" aria-hidden="true">🌤️</span>
+              <h2 class="overview-title">Project Overview</h2>
+            </div>
+
+            <div class="overview-block">
+              <h3 class="overview-h3">Key Questions</h3>
+              <ul class="overview-list">
+                <li>Which conditions best predict a “pleasant” day?</li>
+                <li>How does pleasantness vary by season and location?</li>
+                <li>How far ahead can we predict reliably (1-day vs 7-day)?</li>
+                <li>Which features drive predictions (temp, humidity, wind, rain)?</li>
+                <li>How confident is the model (probability + calibration)?</li>
+              </ul>
+            </div>
+
+            <div class="overview-divider" aria-hidden="true"></div>
+
+            <div class="overview-block">
+              <h3 class="overview-h3">Quick Facts</h3>
+              <ul class="overview-list">
+                <li>
+                  <strong>Label:</strong> pleasant day = comfort band across
+                  temp/humidity/wind/precip thresholds
+                </li>
+                <li>
+                  <strong>Data:</strong> multi-year daily weather history
+                  (API-sourced)
+                </li>
+                <li>
+                  <strong>Models:</strong> baseline + tree classifier
+                  (primary) + deep learning experiments
+                </li>
+                <li>
+                  <strong>Output:</strong> pleasant probability + drivers +
+                  notebook visuals
+                </li>
+              </ul>
+            </div>
+
+            <div class="overview-links">
+              <a class="overview-link"
+                href="https://public.tableau.com/app/profile/yuliia.fliorko/viz/Story_17629093650820/WhatMakesHousePrice"
+                target="_blank" rel="noreferrer">Notebooks</a>
+              <span class="overview-sep">·</span>
+              <a class="overview-link" href="https://github.com/Julia-Fliorko/Pleasant-weather-predictions/tree/main"
+                target="_blank" rel="noreferrer">GitHub</a>
+              <span class="overview-sep">·</span>
+              <a class="overview-link" href="REPLACE_WITH_REPORT_PDF_URL" target="_blank" rel="noreferrer">Report
+                (PDF)</a>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Section tabs -->
+        <nav class="project-tabs" aria-label="Project sections">
+          <a class="tab is-active" href="#problem">Problem</a>
+          <a class="tab" href="#dataset">Dataset</a>
+          <a class="tab" href="#approach">Approach</a>
+          <a class="tab" href="#results">Results</a>
+          <a class="tab" href="#tools">Tools</a>
+          <a class="tab" href="#visualizations">Visualizations</a>
+          <a class="tab" href="#takeaways">Takeaways</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="project-section" id="problem">
+      <div class="container">
+        <div class="section-card">
+          <h2 class="section-title">Problem</h2>
+          <p>
+            Weather drives decisions nonstop (training plans, commutes,
+            outdoor events, staffing, travel). But most forecast UX dumps raw
+            variables on users and calls it a day.
+          </p>
+          <p>
+            This project reframes forecasting into one operational signal:
+            <strong>pleasant vs not pleasant</strong>, delivered as a
+            <strong>probability</strong> with drivers — so it’s usable by
+            non-technical stakeholders.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dataset -->
+    <section class="project-section" id="dataset">
+      <div class="container">
+        <div class="section-card">
+          <h2 class="section-title">Dataset</h2>
+
+          <div class="two-col">
+            <div class="col">
+              <h3 class="section-h3">Primary Dataset</h3>
+              <p>
+                <strong>Historical daily weather</strong> pulled via API by
+                location (multi-year horizon).
+              </p>
+              <p>
+                Typical inputs: temperature, humidity/dew point, wind,
+                precipitation, pressure, cloud cover (varies by source).
+              </p>
+            </div>
+
+            <div class="col">
+              <h3 class="section-h3">Target Engineering</h3>
+              <p>
+                Converted raw variables into a consistent business label:
+                <strong>pleasant day</strong> (comfort thresholds).
+              </p>
+              <p>
+                Why it matters: it turns “weather data” into a product metric
+                you can model, monitor, and operationalize.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="project-section" id="approach">
+      <div class="container">
+        <div class="section-card">
+          <h2 class="section-title">Approach</h2>
+
+          <div class="step-list">
+            <div class="step">
+              <h3 class="step-title">1) Data Wrangling + QA Gates</h3>
+              <p>
+                Standardized to daily grain, handled missingness, removed
+                broken rows, and enforced sanity constraints to prevent
+                garbage-in/garbage-out.
+              </p>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">2) Feature Engineering (Time-Aware)</h3>
+              <p>
+                Built lag and rolling-window features, seasonality signals,
+                precipitation flags, and short-term volatility metrics —
+                designed to generalize, not memorize.
+              </p>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">3) Modeling + Tuning</h3>
+              <ul>
+                <li><strong>Baselines:</strong> simple classifiers to set the floor</li>
+                <li><strong>Main:</strong> tree-based model (strong accuracy + interpretability)</li>
+                <li><strong>Deep learning:</strong> CNN/RNN/LSTM experiments for higher-capacity pattern learning</li>
+                <li><strong>Optimization:</strong> grid/random + Bayesian tuning where applicable</li>
+              </ul>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">4) Evaluation (Decision-Grade)</h3>
+              <p>
+                Compared train/test behavior, reviewed confusion matrices,
+                precision/recall tradeoffs, and probability outputs to make
+                the forecast usable, not just “accurate.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="project-section" id="results">
+      <div class="container">
+        <div class="section-card">
+          <h2 class="section-title">Results</h2>
+
+          <ul class="bullets">
+            <li><strong>Signal > noise:</strong> engineered time-aware features improved prediction stability versus
+              raw-variable baselines.</li>
+            <li><strong>Seasonality is real:</strong> pleasant probability shifts predictably by month/season and
+              location.</li>
+            <li><strong>Top drivers:</strong> temperature band + humidity + wind + precipitation (features cluster into
+              “comfort regimes”).</li>
+            <li><strong>Output is probabilistic:</strong> better UX for stakeholder decisions than a brittle yes/no.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <section class="project-section" id="tools">
+      <div class="container">
+        <div class="section-card">
+          <h2 class="section-title">Tools</h2>
+
+          <div class="tools-grid">
+            <div class="tool">
+              <h3 class="tool-title">Data Wrangling</h3>
+              <p>pandas, numpy</p>
+            </div>
+
+            <div class="tool">
+              <h3 class="tool-title">EDA &amp; Visualization</h3>
+              <p>matplotlib, seaborn</p>
+            </div>
+
+            <div class="tool">
+              <h3 class="tool-title">Modeling</h3>
+              <p>scikit-learn (KNN, Tree, Random Forest)</p>
+            </div>
+
+            <div class="tool">
+              <h3 class="tool-title">Unsupervised Learning</h3>
+              <p>PCA, Agglomerative Clustering, dendrograms</p>
+            </div>
+
+            <div class="tool">
+              <h3 class="tool-title">Deep Learning</h3>
+              <p>tensorflow, keras</p>
+            </div>
+
+            <div class="tool">
+              <h3 class="tool-title">Optimization</h3>
+              <p>GridSearchCV/RandomizedSearchCV + Bayesian tuning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visualizations -->
+    <section class="project-section" id="visualizations">
+      <div class="container">
+        <div class="section-card">
+          <h2 class="viz-panel-title">Gradient Descent</h3>
+            <p class="viz-panel-sub">Feature scaling, parameter updates, and objective geometry</p>
+
+            <div class="viz-matrix">
+              <!-- 1) Gradient Descent -->
+              <article class="viz-panel">
+                <div class="viz-panel-head">
+                  <h3 class="viz-panel-title">Gradient Descent</h3>
+                  <p class="viz-panel-sub">Optimization behavior + convergence visuals</p>
+                </div>
+
+                <p class="viz-panel-desc">
+                  Gradient descent iteratively updates θ = [θ₀, θ₁] to minimize loss. Here, θ fits a simple trend
+                  between day-of-year (X) and scaled mean temperature (y) across 1960 / 2000 / 2022 for Gdansk,
+                  Stockholm, and Madrid, with convergence and loss geometry inspected via iteration curves and loss
+                  surfaces.
+                </p>
+                <!--<ul class="viz-panel-bullets">
+                  <li>Shows: loss surface, theta path, and convergence speed across parameter choices</li>
+                  <li>Why it matters: proves the pipeline isn’t “black box ML” — fundamentals are verified</li>
+                </ul>-->
+
+                <div class="viz-gallery" aria-label="Gradient descent gallery">
+                  <button class="viz-nav viz-prev" type="button" aria-label="Previous slide">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M15.5 19 8.5 12l7-7" />
+                    </svg>
+                  </button>
+                  <button class="viz-nav viz-next" type="button" aria-label="Next slide">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M8.5 5 15.5 12l-7 7" />
+                    </svg>
+                  </button>
+
+                  <div class="viz-track" role="list" tabindex="0">
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/gradient_descent_mean_temperature_over_2022.webp"
+                        alt="Mean temperature over 2022" loading="lazy" decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Mean temperature (2022)</div>
+                        <div class="viz-item-desc">
+                          Daily pattern check before optimization (seasonality signal across stations/years).
+                        </div>
+                      </figcaption>
+                    </figure>
+
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/gradient_descent_gdank_scaled_temperatures_feated_linear.webp"
+                        alt="Scaled temperature features with linear fit (Gdansk, 2022)" loading="lazy"
+                        decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Scaled temperature features + linear fit</div>
+                        <div class="viz-item-desc">
+                          Linear fit over the year: θ₀ = baseline, θ₁ = seasonal direction/strength.
+                        </div>
+                      </figcaption>
+                    </figure>
+
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/gradient_descent_optimization.webp"
+                        alt="Gradient descent parameter updates" loading="lazy" decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Parameter updates (θ)</div>
+                        <div class="viz-item-desc">
+                          Tracks θ movement and stability; compares station/year behavior under the same setup.
+                        </div>
+                      </figcaption>
+                    </figure>
+
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/gradient_descent_gdansk_loss_function.webp"
+                        alt="Loss function surface" loading="lazy" decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Loss surface</div>
+                        <div class="viz-item-desc">
+                          Shows where optimization is smooth vs. unstable (e.g., stable around α ≈ 0.1–0.3, divergence
+                          when α is too large in some runs like 2000 at α ≥ 0.4).
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 2) Model Heatmaps -->
+              <article class="viz-panel">
+                <div class="viz-panel-head">
+                  <h3 class="viz-panel-title">Model Heatmaps</h3>
+                  <p class="viz-panel-sub">Same scaled features → different decision logic</p>
+                </div>
+
+                <p class="viz-panel-desc">
+                  These heatmaps use the same standardized weather feature set and the same binary label:
+                  <strong>1 = pleasant</strong>, <strong>0 = not pleasant</strong>.
+                </p>
+
+                <ul class="viz-panel-bullets">
+                  <li><strong>How to read:</strong> correct predictions concentrate on the <strong>diagonal</strong>
+                    (true 0 and true 1).</li>
+                  <li><strong>Color:</strong> darker / more intense cells mean <strong>more samples</strong> in that
+                    outcome.</li>
+                </ul>
+
+                <div class="viz-gallery" aria-label="Model heatmaps gallery">
+                  <button class="viz-nav viz-prev" type="button" aria-label="Previous slide">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M15.5 19 8.5 12l7-7" />
+                    </svg>
+                  </button>
+                  <button class="viz-nav viz-next" type="button" aria-label="Next slide">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M8.5 5 15.5 12l-7 7" />
+                    </svg>
+                  </button>
+
+                  <div class="viz-track" role="list" tabindex="0">
+                    <!-- 1) KNN -->
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/k-nearest_heatmap.webp"
+                        alt="KNN confusion matrix heatmap (0 = not pleasant, 1 = pleasant)" loading="lazy"
+                        decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">K-Nearest Neighbors (KNN)</div>
+                        <div class="viz-item-desc">
+                          Instance-based classifier: predicts based on the closest points in the scaled feature space.
+                        </div>
+                      </figcaption>
+                    </figure>
+
+                    <!-- 2) Decision Tree -->
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/decision_tree_heatmap.webp"
+                        alt="Decision tree confusion matrix heatmap (0 = not pleasant, 1 = pleasant)" loading="lazy"
+                        decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Decision Tree</div>
+                        <div class="viz-item-desc">
+                          Rule-based classifier: learns split thresholds on features (e.g., temperature band, humidity,
+                          wind).
+                        </div>
+                      </figcaption>
+                    </figure>
+
+                    <!-- 3) ANN -->
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/ann_heatmap.webp"
+                        alt="ANN confusion matrix heatmap (0 = not pleasant, 1 = pleasant)" loading="lazy"
+                        decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Artificial Neural Network (ANN)</div>
+                        <div class="viz-item-desc">
+                          Dense neural baseline: learns a non-linear decision boundary from the same standardized
+                          inputs.
+                        </div>
+                      </figcaption>
+                    </figure>
+
+                    <!-- 4) Comparison -->
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/model_performance comparison_heatmap.webp"
+                        alt="Model performance comparison heatmap across supervised models" loading="lazy"
+                        decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Model comparison snapshot</div>
+                        <div class="viz-item-desc">
+                          Side-by-side view to compare how prediction errors shift by model under the same label
+                          definition.
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 3) Optimization Results -->
+              <article class="viz-panel">
+                <div class="viz-panel-head">
+                  <h3 class="viz-panel-title">Optimization Results</h3>
+                  <p class="viz-panel-sub">Supervised model tuning and evaluation</p>
+                </div>
+
+                <p class="viz-panel-desc">
+                  This section shows a supervised Random Forest classifier trained on labeled weather data,
+                  evaluated on a held-out test set, and then tuned using randomized hyperparameter search.
+                  The same train/test split and target definition are used for all comparisons.
+                </p>
+
+                <ul class="viz-panel-bullets">
+                  <li>Target variable: binary classification</li>
+                  <li>1 = Pleasant day</li>
+                  <li>0 = Not pleasant day</li>
+                </ul>
+
+                <div class="viz-gallery" aria-label="Optimization results gallery">
+                  <button class="viz-nav viz-prev" type="button" aria-label="Previous slide">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M15.5 19 8.5 12l7-7" />
+                    </svg>
+                  </button>
+
+                  <button class="viz-nav viz-next" type="button" aria-label="Next slide">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M8.5 5 15.5 12l-7 7" />
+                    </svg>
+                  </button>
+
+                  <div class="viz-track" role="list" tabindex="0">
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/baseline_random_forest_prediction_heatmap_results.png"
+                        alt="Baseline Random Forest confusion matrix" loading="lazy" decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Baseline Random Forest</div>
+                        <div class="viz-item-desc">
+                          Confusion matrix for the baseline model trained with default parameters.
+                          Diagonal cells represent correct predictions (true negatives and true positives);
+                          off-diagonal cells show misclassifications.
+                        </div>
+                      </figcaption>
+                    </figure>
+
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/optimized_random_forest_prediction_heatmap_results.png"
+                        alt="Optimized Random Forest confusion matrix" loading="lazy" decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Optimized Random Forest</div>
+                        <div class="viz-item-desc">
+                          Confusion matrix after randomized hyperparameter search with cross-validation.
+                          Evaluated on the same test set to allow direct comparison with the baseline.
+                        </div>
+                      </figcaption>
+                    </figure>
+
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/feature_importance_comparison_result.png"
+                        alt="Feature importance comparison" loading="lazy" decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Feature importance comparison</div>
+                        <div class="viz-item-desc">
+                          Side-by-side comparison of feature importances before and after tuning,
+                          showing how the model’s reliance on specific weather variables changes.
+                        </div>
+                      </figcaption>
+                    </figure>
+
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/station_importance_comparison_result.png"
+                        alt="Station importance comparison" loading="lazy" decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Station importance comparison</div>
+                        <div class="viz-item-desc">
+                          Aggregated importance by weather station for baseline vs optimized models,
+                          used to examine how predictive weight is distributed across locations.
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 4) Weather Image Classification -->
+              <article class="viz-panel">
+                <div class="viz-panel-head">
+                  <h3 class="viz-panel-title">Weather Image Classification</h3>
+                  <p class="viz-panel-sub">CNN training signals + evaluation</p>
+                </div>
+
+                <p class="viz-panel-desc">
+                  Trained a CNN on weather imagery and tracked training dynamics
+                  to prevent overfitting and confirm generalization.
+                </p>
+                <ul class="viz-panel-bullets">
+                  <li>Shows: accuracy/loss curves + confusion matrix for class-level performance</li>
+                  <li>Why it matters: proves deep learning work is monitored + evaluated correctly</li>
+                </ul>
+
+                <div class="viz-gallery" aria-label="Weather image classification gallery">
+                  <button class="viz-nav viz-prev" type="button" aria-label="Previous slide">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M15.5 19 8.5 12l7-7" />
+                    </svg>
+                  </button>
+                  <button class="viz-nav viz-next" type="button" aria-label="Next slide">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M8.5 5 15.5 12l-7 7" />
+                    </svg>
+                  </button>
+
+                  <div class="viz-track" role="list" tabindex="0">
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/weather_image_classification_accuracy.webp"
+                        alt="Weather image classification accuracy" loading="lazy" decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Training accuracy</div>
+                        <div class="viz-item-desc">Learning curve monitoring — checks whether the CNN is improving
+                          steadily without memorization.</div>
+                      </figcaption>
+                    </figure>
+
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/weather_image_classification_loss.webp"
+                        alt="Weather image classification loss" loading="lazy" decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Training loss</div>
+                        <div class="viz-item-desc">Optimization signal — confirms the model is actually minimizing error
+                          and not stalling.</div>
+                      </figcaption>
+                    </figure>
+
+                    <figure class="viz-slide" role="listitem">
+                      <img src="../assets/images/viz/weather_image_classification_confusion_matrix.png"
+                        alt="Weather image classification confusion matrix" loading="lazy" decoding="async" />
+                      <figcaption class="viz-caption">
+                        <div class="viz-item-title">Confusion matrix</div>
+                        <div class="viz-item-desc">Class-by-class performance — shows which weather categories the CNN
+                          confuses most.</div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </article>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Takeaways -->
+    <section class="project-section" id="takeaways">
+      <div class="container">
+        <div class="section-card">
+          <h2 class="section-title">Takeaways</h2>
+
+          <p>
+            This project is a translation layer: it turns raw forecasts into a
+            consistent, decision-grade signal —
+            <strong>pleasant probability</strong>
+            — with enough transparency to build trust.
+          </p>
+
+          <p>
+            The portfolio value is the full workflow: API ingestion, QA gates,
+            time-aware feature engineering, model comparison, tuning, and
+            diagnostics — all packaged as a clean notebook pipeline.
+          </p>
+
+          <div class="takeaway-cta">
+            <a class="btn btn-primary"
+              href="https://github.com/Julia-Fliorko/Pleasant-weather-predictions/tree/main/Scripts" target="_blank"
+              rel="noreferrer">
+              <span class="btn-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 4h7v7H4V4Zm9 0h7v4h-7V4ZM13 10h7v10h-7V10ZM4 13h7v7H4v-7Z" />
+                </svg>
+              </span>
+              <span class="btn-text">Explore the Notebooks</span>
+            </a>
+
+            <a class="btn btn-ghost" href="https://github.com/Julia-Fliorko/Pleasant-weather-predictions/tree/main"
+              target="_blank" rel="noreferrer">
+              <span class="btn-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 .8a11.2 11.2 0 0 0-3.54 21.8c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.75-1.32-3.75-1.32-.5-1.28-1.23-1.62-1.23-1.62-1-.7.07-.69.07-.69 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.69-1.47-2.47-.28-5.07-1.23-5.07-5.48 0-1.21.43-2.2 1.13-2.98-.11-.28-.49-1.4.11-2.93 0 0 .92-.3 3.02 1.14a10.4 10.4 0 0 1 5.5 0c2.1-1.44 3.02-1.14 3.02-1.14.6 1.53.22 2.65.11 2.93.7.78 1.13 1.77 1.13 2.98 0 4.26-2.6 5.2-5.08 5.47.39.34.74 1.02.74 2.06v3.05c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z" />
+                </svg>
+              </span>
+              <span class="btn-text">See the Code</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="project-footer">
+      <div class="container">
+        <a class="mini-link" href="#top">Back to top</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="../assets/js/analytics.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Active-tab behavior (same as Housing) -->
+  <script>
+    const tabs = Array.from(document.querySelectorAll(".project-tabs .tab"));
+    const sections = tabs
+      .map((t) => document.querySelector(t.getAttribute("href")))
+      .filter(Boolean);
+
+    const setActive = (id) => {
+      tabs.forEach((t) =>
+        t.classList.toggle("is-active", t.getAttribute("href") === "#" + id),
+      );
+    };
+
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) setActive(e.target.id);
+        });
+      },
+      { rootMargin: "-40% 0px -55% 0px", threshold: 0.01 },
+    );
+
+    sections.forEach((s) => obs.observe(s));
+  </script>
+
+  <script>
+    // Per-panel carousel controls (each panel scrolls independently)
+    (function () {
+      const galleries = document.querySelectorAll(".viz-gallery");
+
+      galleries.forEach((gallery) => {
+        const track = gallery.querySelector(".viz-track");
+        const prev = gallery.querySelector(".viz-prev");
+        const next = gallery.querySelector(".viz-next");
+        if (!track || !prev || !next) return;
+
+        const step = () => track.clientWidth;
+
+        prev.addEventListener("click", () => {
+          track.scrollBy({ left: -step(), behavior: "smooth" });
+        });
+
+        next.addEventListener("click", () => {
+          track.scrollBy({ left: step(), behavior: "smooth" });
+        });
+
+        // Keyboard support when the track is focused
+        track.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowLeft") {
+            e.preventDefault();
+            track.scrollBy({ left: -step(), behavior: "smooth" });
+          }
+          if (e.key === "ArrowRight") {
+            e.preventDefault();
+            track.scrollBy({ left: step(), behavior: "smooth" });
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>
